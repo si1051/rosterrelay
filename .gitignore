@@ -1,0 +1,15 @@
+backend/target/
+*.class
+*.log
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+.env
