@@ -2,22 +2,22 @@ services:
   db:
     image: postgres:16-alpine
     environment:
-      POSTGRES_DB: shiftmate
-      POSTGRES_USER: shiftmate
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-shiftmate}
+      POSTGRES_DB: rosterrelay
+      POSTGRES_USER: rosterrelay
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-rosterrelay}
     volumes:
       - db-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U shiftmate"]
+      test: ["CMD-SHELL", "pg_isready -U rosterrelay"]
       interval: 5s
       retries: 10
 
   backend:
     build: ./backend
     environment:
-      DB_URL: jdbc:postgresql://db:5432/shiftmate
-      DB_USER: shiftmate
-      DB_PASSWORD: ${DB_PASSWORD:-shiftmate}
+      DB_URL: jdbc:postgresql://db:5432/rosterrelay
+      DB_USER: rosterrelay
+      DB_PASSWORD: ${DB_PASSWORD:-rosterrelay}
       JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET (32+ chars) in .env}
       CORS_ORIGINS: http://localhost:3000
     depends_on:

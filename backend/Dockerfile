@@ -10,7 +10,7 @@ RUN mvn -q -B package -DskipTests
 FROM eclipse-temurin:21-jre-alpine
 RUN addgroup -S app && adduser -S app -G app
 WORKDIR /app
-COPY --from=build /app/target/shiftmate-*.jar app.jar
+COPY --from=build /app/target/rosterrelay-*.jar app.jar
 USER app
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s \

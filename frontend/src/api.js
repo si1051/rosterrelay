@@ -1,5 +1,5 @@
 const BASE = import.meta.env.VITE_API_URL || '';
-const TOKEN_KEY = 'shiftmate.token';
+const TOKEN_KEY = 'rosterrelay.token';
 
 export function getToken() { try { return localStorage.getItem(TOKEN_KEY); } catch { return null; } }
 export function setToken(t) { try { if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); } catch { /* ignore */ } }

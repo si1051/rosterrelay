@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="shell">
       <header className="topbar">
-        <div className="brand"><span className="logo" aria-hidden>◆</span> ShiftMate</div>
+        <div className="brand"><span className="logo" aria-hidden>◆</span> RosterRelay</div>
         <nav className="tabs" aria-label="Sections">
           {TABS[me.role].map(([id, text]) => (
             <button key={id} className={tab === id ? 'tab active' : 'tab'} onClick={() => setTab(id)}>

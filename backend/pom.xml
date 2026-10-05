@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>com.sriram</groupId>
-    <artifactId>shiftmate</artifactId>
+    <artifactId>rosterrelay</artifactId>
     <version>1.0.0</version>
-    <name>shiftmate</name>
-    <description>ShiftMate - volunteer shift scheduling (REST API)</description>
+    <name>rosterrelay</name>
+    <description>RosterRelay - volunteer shift scheduling (REST API)</description>
 
     <properties>
         <java.version>21</java.version>

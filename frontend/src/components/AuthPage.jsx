@@ -22,7 +22,7 @@ export default function AuthPage({ onAuthed }) {
   return (
     <div className="auth-wrap">
       <form className="card auth-card" onSubmit={submit}>
-        <div className="brand big"><span className="logo">◆</span> ShiftMate</div>
+        <div className="brand big"><span className="logo">◆</span> RosterRelay</div>
         <p className="muted">Volunteer scheduling that actually fills shifts: waitlists that refill themselves, reminders, and a no-show-aware dashboard.</p>
         {mode === 'register' && (
           <>

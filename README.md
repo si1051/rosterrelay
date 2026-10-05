@@ -1,6 +1,8 @@
-# ShiftMate
+# RosterRelay
 
-**Volunteer scheduling that actually fills shifts.** Nonprofits post shifts, volunteers sign up in one click, and when someone cancels the next person on the waitlist is moved in and notified automatically. Coordinators get a dashboard that flags under-staffed shifts days ahead and suggests the most reliable volunteers who are free to fill them. Volunteers get a downloadable service-hours log and a calendar feed.
+**Volunteer scheduling that actually fills shifts.** The name comes from how it works: when one volunteer drops out, their spot is relayed straight to the next person on the waitlist.
+
+Nonprofits post shifts, volunteers sign up in one click, and when someone cancels the next person on the waitlist is moved in and notified automatically. Coordinators get a dashboard that flags under-staffed shifts days ahead and suggests the most reliable volunteers who are free to fill them. Volunteers get a downloadable service-hours log and a calendar feed.
 
 ![Java](https://img.shields.io/badge/Java-21-orange) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6db33f) ![React](https://img.shields.io/badge/React-18-61dafb) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791) ![Docker](https://img.shields.io/badge/Docker-ready-2496ed)
 
@@ -51,7 +53,7 @@ React (Vite) ──/api──▶ Spring Boot API ──JPA──▶ PostgreSQL
 ```
 
 ```
-backend/src/main/java/com/sriram/shiftmate
+backend/src/main/java/com/sriram/rosterrelay
 ├── auth/      JWT + roles, login rate limiting
 ├── shift/     shifts, coordinator API
 ├── signup/    sign-ups, waitlist, reliability, hours log, calendar feed
